@@ -1,5 +1,5 @@
 <ol>
   <% @tasks.each do |task| %>
-    <li><%= Title = task.title, Details = task.details, Status: task.completed %></li>
+    <li><%= link_to task.title, task_path(task) %></li>
   <% end %>
 </ol>
